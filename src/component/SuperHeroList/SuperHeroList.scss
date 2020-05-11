@@ -1,0 +1,17 @@
+.superHeroList {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  margin-bottom: 20px;
+  color: coral;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 800px) {
+  .superHeroList {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

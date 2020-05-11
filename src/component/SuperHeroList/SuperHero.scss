@@ -1,0 +1,33 @@
+.superHero {
+  box-sizing: border-box;
+  max-width: 150px;
+  min-width: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+  .imageHolder {
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition: all 0.3s linear;
+    }
+  }
+
+  p {
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 2px dashed;
+    background: white;
+  }
+  &:hover {
+    .imageHolder img {
+      transform: scale(1.5);
+    }
+  }
+}

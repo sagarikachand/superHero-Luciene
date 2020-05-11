@@ -1,0 +1,30 @@
+.collapsible_header {
+  cursor: pointer;
+  border: solid 1px #f2f2f2;
+  padding: 15px;
+  background-color: #0089cc;
+  color: #fff;
+  font-family: verdana;
+}
+.content {
+  cursor: pointer;
+  border-left: solid 1px #f2f2f2;
+  border-right: solid 1px #f2f2f2;
+  border-bottom: solid 1px #f2f2f2;
+  border-radius: 0 0 5px 5px;
+  padding: 15px;
+  font-family: verdana;
+  font-size: 14px;
+}
+
+.contentBox {
+  max-height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+.contentBox.open {
+  opacity: 1;
+  max-height: 9999px;
+}

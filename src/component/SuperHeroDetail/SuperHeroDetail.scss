@@ -1,0 +1,12 @@
+.detail_wrapper {
+  text-align: left;
+  max-width: 80%;
+  margin: 0 auto;
+  .name {
+    padding-left: 20px;
+    text-transform: uppercase;
+  }
+  .attributes {
+    margin-bottom: 10px;
+  }
+}
